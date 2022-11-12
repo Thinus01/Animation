@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#section {
+    text-align: center;
+    background-image: url(images/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#greeting {
+    font-family: 'Nosifer', cursive;
+    font-size: 100px;
+}
+
+#trippyform {
+    display: flex;
+    justify-content: center;
+}
+
+#name {
+    font-size: 25px;
+    font-family: 'Nosifer', cursive;
+    position: absolute;
+    top: 225px;
+    left: 600px;
+    width: 600px;
+    height: 45px;
+    background-image: linear-gradient(45deg, blue, orange);
+}
+
+#email {
+    font-size: 25px;
+    font-family: 'Nosifer', cursive;
+    position: absolute;
+    top: 310px;
+    left: 550px;
+    width: 700px;
+    height: 45px;
+    background-image: linear-gradient(-45deg, blue, orange);
+}
+
+#button {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 500px;
+    left: 525px;
+    top: 530px;
+    left: 685px;
+    border: 0;
+}
+
+#ghost {
+    position: absolute;
+    top: 10px;
+    left: -27px;
+    height: 100px;
+    width: 100px;
+}
+
+#button:enabled {
+    animation: booh 10s ease-in forwards infinite;
+}
+
+#button:hover {
+    animation-play-state: paused;
+}
+
+@keyframes booh {
+    0% {
+        transform: translateX(500px) translateY(0px);
+    }
+    25%{
+        transform: translateX(0px) translateY(200px);
+    }
+    50% {
+        transform: translateX(-500px) translateY(0px);
+    }
+    75% {
+        transform: translateX(0px) translateY(-150px);
+    }
+    100% {
+        transform: translateX(500px) translateY(0px);
+
+    }
+}
